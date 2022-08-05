@@ -91,7 +91,6 @@ function ImageDrop(props) {
     formData.append("file", file);
 
     try {
-      //const response = await fetch("http://localhost:8888/shopify.s3.amazonaws.com", {
       const response = await fetch(url, {
         method: "POST",
         body: formData,
